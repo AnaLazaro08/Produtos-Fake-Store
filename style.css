@@ -1,0 +1,81 @@
+body {
+    background-color: #ffd3f6;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 40px 20px;
+  }
+
+  h1{
+    color: rgb(227, 7, 183);
+    font-family: fantasy;
+    justify-content: center;
+    display: flex;
+  }
+ 
+  /* ===== Estilo dos Labels e Inputs ===== */
+  label {
+    font-weight: 600;
+    margin-top: 15px;
+    display: block;
+  }
+ 
+  input[type="text"] {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 5px;
+    border: 1px solid #c048d8;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+ 
+  input[type="text"]:focus {
+    border-color: #fd0dc9;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 179, 0.25);
+  }
+ 
+  /* ===== Botão ===== */
+  #pesquisar {
+    display: inline-block;
+    background-color: #fd0db9;
+    color: #fffffffe;
+    border: none;
+    padding: 10px 25px;
+    margin-top: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+ 
+  #pesquisar:hover {
+    background-color: #ad188d;
+  }
+ 
+  /* ===== Tabela de Resultados ===== */
+  .table-wrapper {
+    margin-top: 40px;
+    overflow-x: auto;
+  }
+ 
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffb9f2;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.05);
+  }
+ 
+  table thead {
+    background-color: #ffaef0;
+    color: #ffb1f1(248, 0, 0);
+  }
+ 
+  table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ffabf7;
+  }
+ 
+  table tr:hover {
+    background-color: #ff00ee;
+  }
